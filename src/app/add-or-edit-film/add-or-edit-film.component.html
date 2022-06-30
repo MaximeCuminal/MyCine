@@ -1,0 +1,15 @@
+<h1>Ajouter ou modifier un film</h1>
+<form [formGroup]="filmForm" (ngSubmit)="submitFilm()">
+  <label>Titre</label><br />
+  <input type="text" formControlName="title"> <br /><br />
+
+  <label>Synopsis</label><br />
+<textarea formControlName="synopsis"></textarea> <br /><br />
+
+  <label>Rating</label><br />
+<textarea formControlName="rating"></textarea> <br /><br />
+
+  <button type="submit">
+    Envoyer
+  </button>
+</form>

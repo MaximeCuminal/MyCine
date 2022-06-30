@@ -1,0 +1,23 @@
+{
+  "films": [
+    {
+      "id": 1,
+      "title": "Film 1",
+      "synopsis": "Synopsis 1",
+      "rating": "5"
+    },
+    {
+      "id": 2,
+      "title": "Film 2",
+      "synopsis": "Synopsis 2",
+      "rating": "4"
+    },
+    {
+      "id": 3,
+      "title": "Film 3",
+      "synopsis": "Synopsis 3",
+      "rating": "3"
+    }
+  ]
+
+}
