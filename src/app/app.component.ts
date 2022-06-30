@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
 import { empty } from 'rxjs';
+import { Component, EventEmitter, OnInit, Output, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { empty } from 'rxjs';
 export class AppComponent {
   title = 'MyCine';
 
-  films: any[] = [];
+  @Input() films: any[] = [];
 
   addFilm(film: any) {
     console.log("Nouveau film :");
@@ -18,6 +19,12 @@ export class AppComponent {
     console.log("Note : "+film.rating);
     console.log("==========");
     this.films.push(film);
+  }
+
+  setFilms(filmList: any[]) {
+    console.log(filmList);
+    this.films = filmList
+    console.log("films set");
   }
 
   removeFilm(index: any) {

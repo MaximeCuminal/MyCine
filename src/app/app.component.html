@@ -5,4 +5,6 @@
   <app-my-films [film]="film" [index]="index" (onFilmDelete)="removeFilm(index)"></app-my-films>
 </div>
 
+<app-film-search (onSearch)="setFilms($event)"></app-film-search>
+
 <router-outlet></router-outlet>
